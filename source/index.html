@@ -34,7 +34,7 @@
               <a class="main-nav__link" href="#reviews">Отзывы</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Фотографии</a>
+              <a class="main-nav__link" href="#gallery">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="#contacts">Контакты</a>
@@ -657,7 +657,20 @@
         </div>
       </section>
       <section class="form-section" data-test="form">
-        <h2 class="form-section__title title">Остались вопросы?</h2>
+        <h2>Остались вопросы?</h2>
+        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="form__input">
+            <span class="visually-hidden">Телефон:</span>
+            <input class="form__text-input" type="tel" name="phone" placeholder="Телефон" id="phone" required  pattern="[^\p{L}]+"
+              title="Телефон не может содержать буквы">
+          </label>
+          <label class="form__input">
+            <span class="visually-hidden">Email:</span>
+            <input class="form__text-input" type="email" name="email" placeholder="Email" id="email" required>
+          </label>
+          <button class="form__button" type="submit">Отправить</button>
+        </form>
       </section>
     </main>
 
