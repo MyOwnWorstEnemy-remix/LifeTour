@@ -153,9 +153,9 @@
               <div class="tour__image">
                 <picture>
                   <source type="image/webp"
-                    srcset="img/tour-1@1x.webp 1x, img/tour-1@2x.webp 2x" width="290"
+                    srcset="img/tour-1@1x.webp 1x, img/tour-1@2x.webp 2x" width="380"
                     height="416">
-                  <img src="img/tour-1@1x.png" srcset="img/tour-1@2x.png 2x" width="290"
+                  <img src="img/tour-1@1x.png" srcset="img/tour-1@2x.png 2x" width="380"
                     height="416" alt="Эльбрус." loading="lazy">
                 </picture>
               </div>
@@ -190,9 +190,9 @@
               <div class="tour__image">
                 <picture>
                   <source type="image/webp"
-                    srcset="img/tour-2@1x.webp 1x, img/tour-2@2x.webp 2x" width="290"
+                    srcset="img/tour-2@1x.webp 1x, img/tour-2@2x.webp 2x" width="380"
                     height="416">
-                  <img src="img/tour-2@1x.png" srcset="img/tour-2@2x.png 2x" width="290"
+                  <img src="img/tour-2@1x.png" srcset="img/tour-2@2x.png 2x" width="380"
                     height="416" alt="Белуха." loading="lazy">
                 </picture>
               </div>
@@ -227,9 +227,9 @@
               <div class="tour__image">
                 <picture>
                   <source type="image/webp"
-                    srcset="img/tour-3@1x.webp 1x, img/tour-3@2x.webp 2x" width="290"
+                    srcset="img/tour-3@1x.webp 1x, img/tour-3@2x.webp 2x" width="380"
                     height="416">
-                  <img src="img/tour-3@1x.png" srcset="img/tour-3@2x.png 2x" width="290"
+                  <img src="img/tour-3@1x.png" srcset="img/tour-3@2x.png 2x" width="380"
                     height="416" alt="Фишт." loading="lazy">
                 </picture>
               </div>
@@ -264,9 +264,9 @@
               <div class="tour__image">
                 <picture>
                   <source type="image/webp"
-                    srcset="img/tour-4@1x.webp 1x, img/tour-4@2x.webp 2x" width="290"
+                    srcset="img/tour-4@1x.webp 1x, img/tour-4@2x.webp 2x" width="380"
                     height="416">
-                  <img src="img/tour-4@1x.png" srcset="img/tour-4@2x.png 2x" width="290"
+                  <img src="img/tour-4@1x.png" srcset="img/tour-4@2x.png 2x" width="380"
                     height="416" alt="Манараг." loading="lazy">
                 </picture>
               </div>
@@ -661,12 +661,12 @@
         <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
         <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="form__input">
-            <span class="visually-hidden">Телефон:</span>
+            <span>Телефон:</span>
             <input class="form__text-input" type="tel" name="phone" placeholder="Телефон" id="phone" required  pattern="[^\p{L}]+"
               title="Телефон не может содержать буквы">
           </label>
           <label class="form__input">
-            <span class="visually-hidden">Email:</span>
+            <span>Email:</span>
             <input class="form__text-input" type="email" name="email" placeholder="Email" id="email" required>
           </label>
           <button class="form__button" type="submit">Отправить</button>
@@ -677,8 +677,90 @@
     <footer data-test="footer">
       <section class="contacts" id="contacts">
         <h2 class="contacts__title title">Контакты<span>Контакты</span></h2>
+        <p>
+          Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости.
+          Мы будем рады поделиться увлекательными историями и подобрать для вас тур.
+        </p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__name">Телефон</h3>
+            <a class="contacts__link" href="tel:7(983)745-45-45">+7 983 745-45-45</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__name">Email</h3>
+            <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__name">Адрес</h3>
+            <p class="contacts__text">г. Москва, пр-т Мира, д. 14, офис 101</p>
+          </li>
+        </ul>
+        <div class="contacts__image">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" width="600"
+              height="324">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" width="768"
+              height="340">
+            <source type="image/webp"
+              srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" width="320"
+              height="343">
+            <source type="image/jpg" media="(min-width: 1440px)"
+              srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x" width="600"
+              height="324">
+            <source type="image/jpg" media="(min-width: 768px)"
+              srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" width="768"
+              height="340">
+            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320"
+              height="343" alt="Горы Алтайского Края." loading="lazy">
+          </picture>
+        </div>
       </section>
-      footer
+      <div class="footer">
+        <svg class="footer__logo" width="142" height="42" role="img" aria-label="Логотип туристической компании LifeTour.">
+          <use href="/__spritemap#sprite-logo"></use>
+        </svg>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#tours">Туры</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#training">Обучение</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#about">О нас</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+        <a class="footer__phone" href="tel:8(800)725-32-32">8 800 725-32-32</a>
+        <ul class="footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
+              <p class="visually-hidden">Мы в Вконтакте.</p>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--ok" href="https://htmlacademy.ru/">
+              <p class="visually-hidden">Мы в Одноклассниках.</p>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--reddit" href="https://htmlacademy.ru/">
+              <p class="visually-hidden">Мы в Reddit.</p>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="#">Политика конфиденциальности</a>
+      </div>
     </footer>
     <script type="module" src="js/main.js"></script>
   </body>
