@@ -9,32 +9,32 @@
   padding: $mobile-padding;
   margin: 0 auto;
   z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 142px;
+  grid-template-rows: 42px auto;
+  row-gap: 14px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-actual-width;
     padding: 20px $tablet-padding;
+    grid-template-columns: 1fr 142px 1fr;
+    grid-template-rows: auto;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-actual-width;
     padding: 32px $desktop-padding;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
 .header__logo {
   width: 142px;
   height: 42px;
-  margin-left: 148px;
-  margin-bottom: 14px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-    margin-bottom: 0;
-  }
+  grid-column: 2/3;
+  grid-row: 1/2;
 
   @media (min-width: $desktop-width) {
     margin-left: 32px;
@@ -48,12 +48,15 @@
   text-align: right;
   color: $text-color-secondary;
   text-decoration: none;
-  margin-left: auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
     margin-left: 128px;
+    grid-column: 3/4;
+    grid-row: 1/2;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,4 +64,23 @@
     line-height: 18px;
     margin-left: 0;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 1;
+    color: $text-color-primary;
+  }
+
+  &:active {
+    opacity: 1;
+    color: $active-color;
+  }
+}
+
+.header__phone[aria-disabled="true"] {
+  color: $disabled-color;
 }

@@ -4,3 +4,4 @@
 // import 'swiper/css';
 
 import './menu.js';
+import './disable-link.js';

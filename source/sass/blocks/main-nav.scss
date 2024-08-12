@@ -1,9 +1,5 @@
 .main-nav {
   background-color: inherit;
-
-  @media (min-width: $desktop-width) {
-    min-width: 572px;
-  }
 }
 
 .main-nav__wrapper {
@@ -26,10 +22,7 @@
 
 .main-nav__toggle {
   padding: 0;
-  position: absolute;
-  top: $mobile-padding;
-  left: $mobile-padding;
-  right: auto;
+  position: relative;
   z-index: 2;
   display: block;
   width: 26px;
@@ -49,13 +42,29 @@
     background-color: $background-color-primary;
   }
 
-  @media (min-width: $tablet-width) {
-    top: 20px;
-    left: $tablet-padding;
-  }
-
   @media (min-width: $desktop-width) {
     display: none;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 0.5;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    &::after {
+      opacity: 1;
+      background-color: $icon-color-dark;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 1;
+      background-color: $active-color;
+    }
   }
 }
 
