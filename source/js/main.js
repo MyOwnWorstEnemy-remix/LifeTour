@@ -5,3 +5,4 @@
 
 import './menu.js';
 import './disable-link.js';
+import "./sliders.js";

@@ -59,7 +59,7 @@
         <div class="hero__wrapper">
           <div class="hero__slider hero-slider swiper-container">
             <ul class="hero-slider__wrapper swiper-wrapper">
-              <li class="hero-slider__slide swiper-slide" tabindex="0">
+              <li class="hero-slider__slide swiper-slide">
                 <div class="hero-slider__image">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)"
@@ -84,10 +84,14 @@
                 <div class="hero-slider__info">
                   <h2>Захватывающие вершины Кавказа</h2>
                   <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                  <a class="hero__button" href="#">Смотреть тур</a>
+                  <a class="hero-slider__button" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero-slider__details visually-hidden">
+                  <p class="hero-slider__detail-info hero-slider__detail-info--duration">6 дней/5 ночей</p>
+                  <p class="hero-slider__detail-info hero-slider__detail-info--complexity">Высокая сложность</p>
                 </div>
               </li>
-              <li class="hero-slider__slide swiper-slide" tabindex="0">
+              <li class="hero-slider__slide swiper-slide">
                 <div class="hero-slider__image">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)"
@@ -111,11 +115,15 @@
                 </div>
                 <div class="hero-slider__info">
                   <h2>Невероятная природа Камчатки</h2>
-                  <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                  <a class="hero__button" href="#">Смотреть тур</a>
+                  <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                  <a class="hero-slider__button" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero-slider__details visually-hidden">
+                  <p class="hero-slider__detail-info hero-slider__detail-info--duration">9 дней/10 ночей</p>
+                  <p class="hero-slider__detail-info hero-slider__detail-info--complexity">Средняя сложность</p>
                 </div>
               </li>
-              <li class="hero-slider__slide swiper-slide" tabindex="0">
+              <li class="hero-slider__slide swiper-slide">
                 <div class="hero-slider__image">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)"
@@ -140,15 +148,19 @@
                 <div class="hero-slider__info">
                   <h2>Магические пейзажи Алтайского Края</h2>
                   <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
-                  <a class="hero__button" href="#">Смотреть тур</a>
+                  <a class="hero-slider__button" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero-slider__details visually-hidden">
+                  <p class="hero-slider__detail-info hero-slider__detail-info--duration">8 дней/7 ночей</p>
+                  <p class="hero-slider__detail-info hero-slider__detail-info--complexity">Лёгкая сложность</p>
                 </div>
               </li>
             </ul>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination hero__pagination"></div>
           </div>
         </div>
       </section>
-      <section class="tours" id="tours" data-test="tours">
+      <!-- <section class="tours" id="tours" data-test="tours">
         <h2 class="tours__title title">Ближайшие туры<span>Ближайшие туры</span></h2>
         <button class="tours__button tours__button--prev slider-button slider-button--prev" type="button">
           <span class="visually-hidden">Предыдущий слайд</span>
@@ -680,7 +692,7 @@
           </label>
           <button class="form__button" type="submit">Отправить</button>
         </form>
-      </section>
+      </section> -->
     </main>
 
     <footer data-test="footer">

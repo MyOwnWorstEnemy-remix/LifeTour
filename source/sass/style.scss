@@ -2,6 +2,7 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -19,3 +20,5 @@
 @import "./blocks/header";
 @import "./blocks/main-nav";
 @import "./blocks/nav-list";
+@import "./blocks/hero";
+@import "./blocks/hero-slider";
