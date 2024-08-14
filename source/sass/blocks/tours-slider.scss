@@ -1,0 +1,24 @@
+.tours-slider {
+  width: 290px;
+  height: 416px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-actual-width;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-actual-width;
+    margin-bottom: 53px;
+  }
+}
+
+.tours-slider__wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

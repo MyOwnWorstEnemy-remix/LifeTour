@@ -128,9 +128,6 @@
                       <source type="image/png" media="(min-width: 1440px)"
                         srcset="img/photo-cards-desktop@1x.png 1x, img/photo-cards-desktop@2x.png 2x" width="410"
                         height="459">
-                      <!-- <source type="image/png" media="(min-width: 768px)"
-                        srcset="img/hero-tablet-2@1x.png 1x, img/hero-tablet-2@2x.png 2x" width="768"
-                        height="1034"> -->
                       <img src="img/photo-cards-tablet@1x.png" srcset="img/photo-cards-tablet@2x.png 2x" width="442"
                         height="365" alt="Фотокарточки с фотографиями из похода." loading="lazy">
                     </picture>
@@ -178,55 +175,59 @@
           </div>
         </div>
       </section>
-      <!-- <section class="tours" id="tours" data-test="tours">
-        <h2 class="tours__title title">Ближайшие туры<span>Ближайшие туры</span></h2>
-        <button class="tours__button tours__button--prev slider-button slider-button--prev" type="button">
-          <span class="visually-hidden">Предыдущий слайд</span>
-        </button>
-        <button class="tours__button tours__button--next slider-button slider-button--next" type="button">
-          <span class="visually-hidden">Следующий слайд</span>
-        </button>
+      <section class="tours" id="tours" data-test="tours">
+        <div class="tours__header">
+          <h2 class="tours__title title">Ближайшие туры<span>Ближайшие туры</span></h2>
+          <div class="tours__button-wrapper">
+            <button class="tours__button tours__button--prev visually-hidden slider-button slider-button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="tours__button tours__button--next visually-hidden slider-button slider-button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
+        </div>
         <div class="tours__slider tours-slider swiper-container">
           <ul class="tours-slider__wrapper swiper-wrapper">
-            <li class="tours-slider__slide tour swiper-slide" tabindex="0">
-              <div class="tour__image">
+            <li class="tours-slider__slide tour-slide swiper-slide" tabindex="0">
+              <div class="tour-slide__image">
                 <picture>
                   <source type="image/webp"
                     srcset="img/tour-1@1x.webp 1x, img/tour-1@2x.webp 2x" width="380"
                     height="416">
                   <img src="img/tour-1@1x.png" srcset="img/tour-1@2x.png 2x" width="380"
-                    height="416" alt="Эльбрус." loading="lazy">
+                    height="416" alt="Кавказ." loading="lazy">
                 </picture>
               </div>
-              <div class="tour__text">
-                <div class="tour__info">
-                  <p class="tour__place">Кавказ</p>
-                  <div class="tour__stats">
-                    <p class="tour__days">4 дня</p>
-                    <p class="tour__nights">3 ночи</p>
+              <div class="tour-slide__text">
+                <div class="tour-slide__info">
+                  <p class="tour-slide__place">Кавказ</p>
+                  <div class="tour-slide__stats">
+                    <p class="tour-slide__stats-info tour-slide__stats-info--days">4 дня</p>
+                    <p class="tour-slide__stats-info tour-slide__stats-info--nights">3 ночи</p>
                   </div>
                 </div>
-                <h3 class="tour__name">Путешествие вокруг Эльбруса</h3>
-                <div class="tour__details">
-                  <div class="tour__complexity">
-                    <p class="tour__details-title">Сложность:</p>
-                    <svg class="tour__stars" width="84" height="16" role="img" aria-label="4 звезды из 5-ти.">
+                <h3 class="tour-slide__name">Путешествие вокруг Эльбруса</h3>
+                <ul class="tour-slide__details">
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Сложность:</p>
+                    <svg class="tour-slide__stars" width="84" height="16" role="img" aria-label="4 звезды из 5-ти.">
                       <use href="/__spritemap#sprite-stars-4"></use>
                     </svg>
-                  </div>
-                  <div class="tour__dates">
-                    <p class="tour__details-title">Даты набора:</p>
-                    <p class="tour__details-text">12.06-19.06</p>
-                  </div>
-                  <div class="tour__group">
-                    <p class="tour__details-title">Группа:</p>
-                    <p class="tour__details-text">до 15 чел.</p>
-                  </div>
-                </div>
+                  </li>
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Даты набора:</p>
+                    <p class="tour-slide__details-text">12.06-19.06</p>
+                  </li>
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Группа:</p>
+                    <p class="tour-slide__details-text">до 15 чел.</p>
+                  </li>
+                </ul>
               </div>
             </li>
-            <li class="tours-slider__slide tour swiper-slide" tabindex="0">
-              <div class="tour__image">
+            <li class="tours-slider__slide tour-slide swiper-slide" tabindex="0">
+              <div class="tour-slide__image">
                 <picture>
                   <source type="image/webp"
                     srcset="img/tour-2@1x.webp 1x, img/tour-2@2x.webp 2x" width="380"
@@ -235,112 +236,112 @@
                     height="416" alt="Белуха." loading="lazy">
                 </picture>
               </div>
-              <div class="tour__text">
-                <div class="tour__info">
-                  <p class="tour__place">Алтай</p>
-                  <div class="tour__stats">
-                    <p class="tour__days">14 дней</p>
-                    <p class="tour__nights">13 ночей</p>
+              <div class="tour-slide__text">
+                <div class="tour-slide__info">
+                  <p class="tour-slide__place">Алтай</p>
+                  <div class="tour-slide__stats">
+                    <p class="tour-slide__stats-info tour-slide__stats-info--days">14 дней</p>
+                    <p class="tour-slide__stats-info tour-slide__stats-info--nights">13 ночей</p>
                   </div>
                 </div>
-                <h3 class="tour__name">Путь к подножию Белухи</h3>
-                <div class="tour__details">
-                  <div class="tour__complexity">
-                    <p class="tour__details-title">Сложность:</p>
-                    <svg class="tour__stars" width="84" height="16" role="img" aria-label="3 звезды из 5-ти.">
+                <h3 class="tour-slide__name">Путь к подножию Белухи</h3>
+                <ul class="tour-slide__details">
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Сложность:</p>
+                    <svg class="tour-slide__stars" width="84" height="16" role="img" aria-label="3 звезды из 5-ти.">
                       <use href="/__spritemap#sprite-stars-3"></use>
                     </svg>
-                  </div>
-                  <div class="tour__dates">
-                    <p class="tour__details-title">Даты набора:</p>
-                    <p class="tour__details-text">14.06–23.06</p>
-                  </div>
-                  <div class="tour__group">
-                    <p class="tour__details-title">Группа:</p>
-                    <p class="tour__details-text">до 25 чел.</p>
-                  </div>
-                </div>
+                  </li>
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Даты набора:</p>
+                    <p class="tour-slide__details-text">14.06–23.06</p>
+                  </li>
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Группа:</p>
+                    <p class="tour-slide__details-text">до 25 чел.</p>
+                  </li>
+                </ul>
               </div>
             </li>
-            <li class="tours-slider__slide tour swiper-slide" tabindex="0">
-              <div class="tour__image">
+            <li class="tours-slider__slide tour-slide swiper-slide" tabindex="0">
+              <div class="tour-slide__image">
                 <picture>
                   <source type="image/webp"
                     srcset="img/tour-3@1x.webp 1x, img/tour-3@2x.webp 2x" width="380"
                     height="416">
                   <img src="img/tour-3@1x.png" srcset="img/tour-3@2x.png 2x" width="380"
-                    height="416" alt="Фишт." loading="lazy">
+                    height="416" alt="Адыгея." loading="lazy">
                 </picture>
               </div>
-              <div class="tour__text">
-                <div class="tour__info">
-                  <p class="tour__place">Адыгея</p>
-                  <div class="tour__stats">
-                    <p class="tour__days">7 дней</p>
-                    <p class="tour__nights">6 ночей</p>
+              <div class="tour-slide__text">
+                <div class="tour-slide__info">
+                  <p class="tour-slide__place">Адыгея</p>
+                  <div class="tour-slide__stats">
+                    <p class="tour-slide__stats-info tour-slide__stats-info--days">7 дней</p>
+                    <p class="tour-slide__stats-info tour-slide__stats-info--nights">6 ночей</p>
                   </div>
                 </div>
-                <h3 class="tour__name">Через Фишт к Чёрному морю и обратно</h3>
-                <div class="tour__details">
-                  <div class="tour__complexity">
-                    <p class="tour__details-title">Сложность:</p>
-                    <svg class="tour__stars" width="84" height="16" role="img" aria-label="4 звезды из 5-ти.">
+                <h3 class="tour-slide__name">Через Фишт к Чёрному морю и обратно</h3>
+                <ul class="tour-slide__details">
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Сложность:</p>
+                    <svg class="tour-slide__stars" width="84" height="16" role="img" aria-label="4 звезды из 5-ти.">
                       <use href="/__spritemap#sprite-stars-4"></use>
                     </svg>
-                  </div>
-                  <div class="tour__dates">
-                    <p class="tour__details-title">Даты набора:</p>
-                    <p class="tour__details-text">15.07–19.07</p>
-                  </div>
-                  <div class="tour__group">
-                    <p class="tour__details-title">Группа:</p>
-                    <p class="tour__details-text">до 22 чел.</p>
-                  </div>
-                </div>
+                  </li>
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Даты набора:</p>
+                    <p class="tour-slide__details-text">15.07–19.07</p>
+                  </li>
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Группа:</p>
+                    <p class="tour-slide__details-text">до 22 чел.</p>
+                  </li>
+                </ul>
               </div>
             </li>
-            <li class="tours-slider__slide tour swiper-slide" tabindex="0">
-              <div class="tour__image">
+            <li class="tours-slider__slide tour-slide swiper-slide" tabindex="0">
+              <div class="tour-slide__image">
                 <picture>
                   <source type="image/webp"
                     srcset="img/tour-4@1x.webp 1x, img/tour-4@2x.webp 2x" width="380"
                     height="416">
                   <img src="img/tour-4@1x.png" srcset="img/tour-4@2x.png 2x" width="380"
-                    height="416" alt="Манараг." loading="lazy">
+                    height="416" alt="Урал." loading="lazy">
                 </picture>
               </div>
-              <div class="tour__text">
-                <div class="tour__info">
-                  <p class="tour__place">Урал</p>
-                  <div class="tour__stats">
-                    <p class="tour__days">9 дней</p>
-                    <p class="tour__nights">10 ночей</p>
+              <div class="tour-slide__text">
+                <div class="tour-slide__info">
+                  <p class="tour-slide__place">Урал</p>
+                  <div class="tour-slide__stats">
+                    <p class="tour-slide__stats-info tour-slide__stats-info--days">9 дней</p>
+                    <p class="tour-slide__stats-info tour-slide__stats-info--nights">10 ночей</p>
                   </div>
                 </div>
-                <h3 class="tour__name">Восхождение Манарага</h3>
-                <div class="tour__details">
-                  <div class="tour__complexity">
-                    <p class="tour__details-title">Сложность:</p>
-                    <svg class="tour__stars" width="84" height="16" role="img" aria-label="5 звезд из 5-ти.">
+                <h3 class="tour-slide__name">Восхождение Манарага</h3>
+                <ul class="tour-slide__details">
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Сложность:</p>
+                    <svg class="tour-slide__stars" width="84" height="16" role="img" aria-label="5 звезд из 5-ти.">
                       <use href="/__spritemap#sprite-stars-5"></use>
                     </svg>
-                  </div>
-                  <div class="tour__dates">
-                    <p class="tour__details-title">Даты набора:</p>
-                    <p class="tour__details-text">12.07–19.07</p>
-                  </div>
-                  <div class="tour__group">
-                    <p class="tour__details-title">Группа:</p>
-                    <p class="tour__details-text">до 7 чел.</p>
-                  </div>
-                </div>
+                  </li>
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Даты набора:</p>
+                    <p class="tour-slide__details-text">12.07–19.07</p>
+                  </li>
+                  <li class="tour-slide__details-group">
+                    <p class="tour-slide__details-title">Группа:</p>
+                    <p class="tour-slide__details-text">до 7 чел.</p>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
         </div>
         <a class="tours__link" href="#">Показать все туры</a>
       </section>
-      <section class="training" id="training" data-test="training">
+      <!-- <section class="training" id="training" data-test="training">
         <h2 class="training__title title">Обучение<span>Обучение</span></h2>
         <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         <h3 class="training__trainers-title title">Наши инструкторы</h3>

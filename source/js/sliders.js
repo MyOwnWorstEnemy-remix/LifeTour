@@ -21,3 +21,28 @@ new Swiper('.hero-slider', {
     },
   },
 });
+
+new Swiper('.tours-slider', {
+  modules: [Navigation],
+  loop: false,
+  navigation: {
+    nextEl: '.tours__button--next',
+    prevEl: '.tours__button--prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+      simulateTouch: false,
+    },
+    1366: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});

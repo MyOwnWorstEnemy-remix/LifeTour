@@ -1,0 +1,148 @@
+.tour-slide__image {
+  width: 290px;
+  height: 416px;
+  background-color: #645d6b;
+
+  @media (min-width: $tablet-width) {
+    width: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.tour-slide__text {
+  position: absolute;
+  width: 250px;
+  height: 356px;
+  padding: 30px 20px;
+  top: 0;
+  left: 0;
+  align-content: end;
+
+  @media (min-width: $tablet-width) {
+    width: 290px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+  }
+}
+
+.tour-slide__name {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: $text-color-secondary;
+  width: 250px;
+  margin: 0;
+  margin-bottom: 31px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 1px;
+    bottom: -16px;
+    left: 0;
+    background-color: $background-color-primary;
+    opacity: 0.2;
+  }
+}
+
+.tour-slide__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 16px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.tour-slide__place {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $text-color-secondary;
+  margin: 0;
+  padding: 8px 12px 8px 34px;
+  background-color: $background-color-secondary;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: $background-color-primary;
+    mask-repeat: no-repeat;
+    mask-image: url("/__spritemap#sprite-pin-filled-view");
+  }
+}
+
+.tour-slide__stats {
+  display: flex;
+  gap: 14px;
+}
+
+.tour-slide__stats-info {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $text-color-secondary;
+  margin: 0;
+  padding: 0;
+  padding-left: 32px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $background-color-primary;
+    mask-repeat: no-repeat;
+  }
+
+  &--days::after {
+    mask-image: url("/__spritemap#sprite-sun-view");
+  }
+
+  &--nights::after {
+    mask-image: url("/__spritemap#sprite-moon-view");
+  }
+}
+
+.tour-slide__details {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tour-slide__details-title {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+  color: $text-color-secondary;
+}
+
+.tour-slide__details-text {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  color: $text-color-secondary;
+}
