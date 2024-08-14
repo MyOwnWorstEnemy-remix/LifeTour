@@ -27,6 +27,7 @@
   height: 80%;
   top: 0;
   left: 0;
+  z-index: 1;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -132,14 +133,16 @@
 }
 
 .hero-slider__details {
-  display: flex;
-  gap: 10px;
-  width: 500px;
-  height: 44px;
-  position: absolute;
-  left: $desktop-padding;
-  bottom: 80px;
-  clip: auto;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+    height: 44px;
+    position: absolute;
+    left: $desktop-padding;
+    bottom: 80px;
+    clip: auto;
+  }
 }
 
 .hero-slider__detail-info {
@@ -169,5 +172,26 @@
 
   &--complexity::after {
     mask-image: url("/__spritemap#sprite-complexity-view");
+  }
+}
+
+.hero-slider__photo-cards {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 422px;
+    height: 365px;
+    position: relative;
+    align-self: center;
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    height: 459px;
+    clip: auto;
+    position: absolute;
+    top: 133px;
+    right: -133px;
+    z-index: -1;
   }
 }

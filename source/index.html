@@ -117,6 +117,24 @@
                   <h2>Невероятная природа Камчатки</h2>
                   <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
                   <a class="hero-slider__button" href="#">Смотреть тур</a>
+                  <div class="hero-slider__photo-cards visually-hidden">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)"
+                        srcset="img/photo-cards-desktop@1x.webp 1x, img/photo-cards-desktop@2x.webp 2x" width="410"
+                        height="459">
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/photo-cards-tablet@1x.webp 1x, img/photo-cards-tablet@2x.webp 2x" width="442"
+                        height="365">
+                      <source type="image/png" media="(min-width: 1440px)"
+                        srcset="img/photo-cards-desktop@1x.png 1x, img/photo-cards-desktop@2x.png 2x" width="410"
+                        height="459">
+                      <!-- <source type="image/png" media="(min-width: 768px)"
+                        srcset="img/hero-tablet-2@1x.png 1x, img/hero-tablet-2@2x.png 2x" width="768"
+                        height="1034"> -->
+                      <img src="img/photo-cards-tablet@1x.png" srcset="img/photo-cards-tablet@2x.png 2x" width="442"
+                        height="365" alt="Фотокарточки с фотографиями из похода." loading="lazy">
+                    </picture>
+                  </div>
                 </div>
                 <div class="hero-slider__details visually-hidden">
                   <p class="hero-slider__detail-info hero-slider__detail-info--duration">9 дней/10 ночей</p>
