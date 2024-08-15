@@ -341,19 +341,28 @@
         </div>
         <a class="tours__link" href="#">Показать все туры</a>
       </section>
-      <!-- <section class="training" id="training" data-test="training">
-        <h2 class="training__title title">Обучение<span>Обучение</span></h2>
-        <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-        <h3 class="training__trainers-title title">Наши инструкторы</h3>
-        <button class="training__button training__button--prev slider-button slider-button--prev" type="button">
-          <span class="visually-hidden">Предыдущий слайд</span>
-        </button>
-        <button class="training__button training__button--next slider-button slider-button--next" type="button">
-          <span class="visually-hidden">Следующий слайд</span>
-        </button>
+      <section class="training" id="training" data-test="training">
+        <diV class="training__description">
+          <h2 class="training__title title">Обучение<span>Обучение</span></h2>
+          <p>
+            Обучение проводится квалифицированными специалистами, за плечами которых десятки
+            пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
+          </p>
+        </diV>
+        <div class="training__trainers-header">
+          <h3 class="training__trainers-title title">Наши инструкторы</h3>
+          <div class="training__button-wrapper">
+            <button class="training__button training__button--prev visually-hidden slider-button slider-button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="training__button training__button--next visually-hidden slider-button slider-button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
+        </div>
         <div class="training__slider training-slider swiper-container">
           <ul class="training-slider__wrapper swiper-wrapper">
-            <li class="training-slider__slide trainer swiper-slide" tabindex="0">
+            <li class="training-slider__slide trainer swiper-slide">
               <div class="trainer__image">
                 <picture>
                   <source type="image/webp"
@@ -364,12 +373,12 @@
                 </picture>
               </div>
               <h4>Александр Прокофьев</h4>
-              <a class="trainer__link" href="#">
+              <a class="trainer__link social-link" href="#">
                 <span class="visually-hidden">Ссылка на аккаунт тренера в ВКонтакте.</span>
               </a>
               <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
             </li>
-            <li class="training-slider__slide trainer swiper-slide" tabindex="0">
+            <li class="training-slider__slide trainer swiper-slide">
               <div class="trainer__image">
                 <picture>
                   <source type="image/webp"
@@ -380,7 +389,7 @@
                 </picture>
               </div>
               <h4>Светлана Афиногенова</h4>
-              <a class="trainer__link" href="#">
+              <a class="trainer__link social-link" href="#">
                 <span class="visually-hidden">Ссылка на аккаунт тренера в ВКонтакте.</span>
               </a>
               <p>
@@ -388,7 +397,7 @@
                 чувствовать — в этом назначение жизни.
               </p>
             </li>
-            <li class="training-slider__slide trainer swiper-slide" tabindex="0">
+            <li class="training-slider__slide trainer swiper-slide">
               <div class="trainer__image">
                 <picture>
                   <source type="image/webp"
@@ -399,7 +408,7 @@
                 </picture>
               </div>
               <h4>Надежда Колесниченко</h4>
-              <a class="trainer__link" href="#">
+              <a class="trainer__link social-link" href="#">
                 <span class="visually-hidden">Ссылка на аккаунт тренера в ВКонтакте.</span>
               </a>
               <p>
@@ -407,7 +416,7 @@
                 с ней чувствуешь себя спокойно и уверенно.
               </p>
             </li>
-            <li class="training-slider__slide trainer swiper-slide" tabindex="0">
+            <li class="training-slider__slide trainer swiper-slide">
               <div class="trainer__image">
                 <picture>
                   <source type="image/webp"
@@ -418,12 +427,12 @@
                 </picture>
               </div>
               <h4>Федор Кайгородов</h4>
-              <a class="trainer__link" href="#">
+              <a class="trainer__link social-link" href="#">
                 <span class="visually-hidden">Ссылка на аккаунт тренера в ВКонтакте.</span>
               </a>
               <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
             </li>
-            <li class="training-slider__slide trainer swiper-slide" tabindex="0">
+            <li class="training-slider__slide trainer swiper-slide">
               <div class="trainer__image">
                 <picture>
                   <source type="image/webp"
@@ -434,7 +443,7 @@
                 </picture>
               </div>
               <h4>Даниэль Васнецов</h4>
-              <a class="trainer__link" href="#">
+              <a class="trainer__link social-link" href="#">
                 <span class="visually-hidden">Ссылка на аккаунт тренера в ВКонтакте.</span>
               </a>
               <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
@@ -443,13 +452,21 @@
         </div>
         <h3 class="training__process-title">Процесс обучения</h3>
         <ul class="training__process">
-          <li class="training__step">Изучение спортивного туристского движения</li>
-          <li class="training__step">Подготовка и техническое снаряжение в походах</li>
-          <li class="training__step">Лекции по окружающей среде, экологии и гигиене</li>
-          <li class="training__step">Разъяснение сложности горных препятствий</li>
+          <li class="training__step training__step--map">
+            <p class="training__step-text">Изучение спортивного туристского движения</p>
+          </li>
+          <li class="training__step training__step--equipment">
+            <p class="training__step-text">Подготовка и техническое снаряжение в походах</p>
+          </li>
+          <li class="training__step training__step--tree">
+            <p class="training__step-text">Лекции по окружающей среде, экологии и гигиене</p>
+          </li>
+          <li class="training__step training__step--mountain">
+            <p class="training__step-text">Разъяснение сложности горных препятствий</p>
+          </li>
         </ul>
       </section>
-      <section class="about" id="about" data-test="about">
+      <!-- <section class="about" id="about" data-test="about">
         <h2>О нас<span>О нас</span></h2>
         <div>
           <h3>История компании</h3>
@@ -784,17 +801,17 @@
         <a class="footer__phone" href="tel:8(800)725-32-32">8 800 725-32-32</a>
         <ul class="footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social-list__link social-link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
               <p class="visually-hidden">Мы в Вконтакте.</p>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--ok" href="https://htmlacademy.ru/">
+            <a class="social-list__link social-link social-list__link--ok" href="https://htmlacademy.ru/">
               <p class="visually-hidden">Мы в Одноклассниках.</p>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--reddit" href="https://htmlacademy.ru/">
+            <a class="social-list__link social-link social-list__link--reddit" href="https://htmlacademy.ru/">
               <p class="visually-hidden">Мы в Reddit.</p>
             </a>
           </li>

@@ -46,3 +46,28 @@ new Swiper('.tours-slider', {
     },
   },
 });
+
+new Swiper('.training-slider', {
+  modules: [Navigation],
+  loop: false,
+  navigation: {
+    nextEl: '.training__button--next',
+    prevEl: '.training__button--prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      simulateTouch: false,
+    },
+    1366: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});

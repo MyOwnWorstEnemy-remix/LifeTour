@@ -1,0 +1,230 @@
+.training {
+  width: $mobile-actual-width;
+  padding: 36px $mobile-padding 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-actual-width;
+    padding: 60px $tablet-padding 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-actual-width;
+    padding: 59px $desktop-padding 40px;
+  }
+}
+
+.training__description {
+  margin-bottom: 25px;
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.training__title,
+.training__trainers-title {
+  margin: 0;
+}
+
+.training__trainers-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.training__button-wrapper {
+  display: flex;
+  gap: 4px;
+}
+
+.training__process-title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 31px;
+  }
+}
+
+.training__process {
+  padding: 0;
+  padding-left: 29px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 183px;
+    top: 18px;
+    left: 6px;
+    background-color: $background-color-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 134px;
+    row-gap: 105px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+
+    &::before {
+      content: "";
+      width: 1180px;
+      height: 2px;
+      left: 20px;
+      top: auto;
+      bottom: -6px;
+    }
+  }
+}
+
+.training__step {
+  padding-left: 35px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    margin-top: -7px;
+    left: -29px;
+    border-radius: 50%;
+    background-color: $background-color-secondary;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-color: $icon-color-dark;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 8px;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 17%;
+    padding-left: 45px;
+    padding-right: 0;
+
+    &::before {
+      content: "";
+      bottom: -12px;
+      top: auto;
+      margin-top: 0;
+      left: 20px;
+    }
+
+    &::after {
+      left: 10px;
+    }
+  }
+
+  &--map::after {
+    mask-image: url("/__spritemap#sprite-map-view");
+  }
+
+  &--equipment {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    &::after {
+      mask-image: url("/__spritemap#sprite-equipment-view");
+    }
+  }
+
+  &--tree{
+    &::after {
+      mask-image: url("/__spritemap#sprite-pine-tree-view");
+    }
+  }
+
+  &--mountain{
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    @media (min-width: $desktop-width) {
+      max-width: 16%;
+    }
+
+    &::after {
+      mask-image: url("/__spritemap#sprite-mountain-view");
+    }
+  }
+}
+
+.training__step-text {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10;
+  }
+}

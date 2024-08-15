@@ -1,0 +1,21 @@
+.training-slider {
+  width: $mobile-actual-width;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-actual-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-actual-width;
+    margin-bottom: 56px;
+  }
+}
+
+.training-slider__wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
