@@ -38,11 +38,11 @@ new Swiper('.tours-slider', {
     768: {
       slidesPerView: 2,
       spaceBetween: 18,
-      simulateTouch: false,
     },
     1366: {
       slidesPerView: 3,
       spaceBetween: 30,
+      simulateTouch: false,
     },
   },
 });
@@ -63,11 +63,11 @@ new Swiper('.training-slider', {
     768: {
       slidesPerView: 3,
       spaceBetween: 20,
-      simulateTouch: false,
     },
     1366: {
       slidesPerView: 4,
       spaceBetween: 20,
+      simulateTouch: false,
     },
   },
 });
