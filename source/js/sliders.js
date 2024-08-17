@@ -71,3 +71,28 @@ new Swiper('.training-slider', {
     },
   },
 });
+
+new Swiper('.reviews-slider', {
+  modules: [Navigation],
+  loop: false,
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+    },
+    1366: {
+      slidesPerView: "auto",
+      spaceBetween: 120,
+      simulateTouch: false,
+    },
+  },
+});

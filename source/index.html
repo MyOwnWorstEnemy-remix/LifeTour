@@ -508,14 +508,18 @@
           </div>
         </div>
       </section>
-      <!-- <section class="reviews" id="reviews" data-test="reviews">
-        <h2 class="reviews__title title">Отзывы<span>Отзывы</span></h2>
-        <button class="reviews__button reviews__button--prev slider-button slider-button--prev" type="button">
-          <span class="visually-hidden">Предыдущий слайд</span>
-        </button>
-        <button class="reviews__button reviews__button--next slider-button slider-button--next" type="button">
-          <span class="visually-hidden">Следующий слайд</span>
-        </button>
+      <section class="reviews" id="reviews" data-test="reviews">
+        <div class="reviews__header">
+          <h2 class="reviews__title title">Отзывы<span>Отзывы</span></h2>
+          <div class="reviews__button-wrapper">
+            <button class="reviews__button reviews__button--prev visually-hidden slider-button slider-button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="reviews__button reviews__button--next visually-hidden slider-button slider-button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
+        </div>
         <div class="reviews__slider reviews-slider swiper-container">
           <ul class="reviews-slider__wrapper swiper-wrapper">
             <li class="reviews-slider__slide review swiper-slide" tabindex="0">
@@ -528,18 +532,20 @@
                     height="169" alt="Фото автора отзыва." loading="lazy">
                 </picture>
               </div>
-              <div>
-                <p>
-                  Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты,
-                  всему научили, все показали. Делились историями о местах, людях, культуре места.
-                </p>
-                <p>
-                  С уверенностью могу сказать, что жизнь разделилась на до этого и после.
-                  Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!
-                </p>
+              <div class="review__text">
+                <div>
+                  <p>
+                    Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы, настоящие эксперты,
+                    всему научили, все показали. Делились историями о местах, людях, культуре места.
+                  </p>
+                  <p>
+                    С уверенностью могу сказать, что жизнь разделилась на до этого и после.
+                    Ещё никогда не отдыхал так душой и телом. Всем очень рекомендую!
+                  </p>
+                </div>
+                <h3 class="review__author">Фролов Александр</h3>
+                <p class="review__info">38 лет, Москва</p>
               </div>
-              <p class="review__name">Фролов Александр</p>
-              <p class="review__info">38 лет, Москва</p>
             </li>
             <li class="reviews-slider__slide review swiper-slide" tabindex="0">
               <div class="review__image">
@@ -551,18 +557,20 @@
                     height="169" alt="Фото автора отзыва." loading="lazy">
                 </picture>
               </div>
-              <div>
-                <p>
-                  Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне,
-                  далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
-                  Было очень интересно!
-                </p>
-                <p>
-                  Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую этот тур.
-                </p>
+              <div class="review__text">
+                <div>
+                  <p>
+                    Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне,
+                    далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века.
+                    Было очень интересно!
+                  </p>
+                  <p>
+                    Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую этот тур.
+                  </p>
+                </div>
+                <h3 class="review__author">Иван Соловьёв</h3>
+                <p class="review__info">25 лет, Владивосток</p>
               </div>
-              <p class="review__name">Иван Соловьёв</p>
-              <p class="review__info">25 лет, Владивосток</p>
             </li>
             <li class="reviews-slider__slide review swiper-slide" tabindex="0">
               <div class="review__image">
@@ -574,18 +582,20 @@
                     height="169" alt="Фото автора отзыва." loading="lazy">
                 </picture>
               </div>
-              <div>
-                <p>
-                  Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км,
-                  физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась.
-                  Второй день прошёл легче, чем ожидала, видимо организм уже привык.
-                </p>
-                <p>
-                  Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.
-                </p>
+              <div class="review__text">
+                <div>
+                  <p>
+                    Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км,
+                    физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась.
+                    Второй день прошёл легче, чем ожидала, видимо организм уже привык.
+                  </p>
+                  <p>
+                    Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.
+                  </p>
+                </div>
+                <h3 class="review__author">Евгения Баженова</h3>
+                <p class="review__info">23 года, Кострома</p>
               </div>
-              <p class="review__name">Евгения Баженова</p>
-              <p class="review__info">23 года, Кострома</p>
             </li>
             <li class="reviews-slider__slide review swiper-slide" tabindex="0">
               <div class="review__image">
@@ -597,23 +607,25 @@
                     height="169" alt="Фото автора отзыва." loading="lazy">
                 </picture>
               </div>
-              <div>
-                <p>
-                  Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось!
-                  Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.
-                </p>
-                <p>
-                  У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра
-                  и пели песни. Обязательно повторю такое приключение!
-                </p>
+              <div class="review__text">
+                <div>
+                  <p>
+                    Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось!
+                    Дух захватывает, когда наконец‑то, преодолев все трудности и препятствия, взбираешься на вершину.
+                  </p>
+                  <p>
+                    У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра
+                    и пели песни. Обязательно повторю такое приключение!
+                  </p>
+                </div>
+                <h3 class="review__author">Елена Пирогова</h3>
+                <p class="review__info">37 лет, Тюмень</p>
               </div>
-              <p class="review__name">Елена Пирогова</p>
-              <p class="review__info">37 лет, Тюмень</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="advantages" data-test="adv">
+      <!-- <section class="advantages" data-test="adv">
         <h2 class="advantages__title title">Преимущества<span>Преимущества</span></h2>
         <div class="advantages__slider advantages-slider swiper-container">
           <ul class="advantages-slider__wrapper swiper-wrapper">
