@@ -119,10 +119,34 @@ const advantagesSlider = new Swiper('.advantages-slider', {
   },
 });
 
+const gallerySlider = new Swiper('.gallery-slider', {
+  modules: [Navigation],
+  loop: true,
+  navigation: {
+    nextEl: '.gallery__button--next',
+    prevEl: '.gallery__button--prev',
+  },
 
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 3,
+    },
+    1440: {
+      slidesPerView: "auto",
+      simulateTouch: false,
+    },
+  },
+});
 
 if (window.matchMedia("(min-width: 1440px)").matches) {
   advantagesSlider.enable();
+  gallerySlider.disable();
 } else {
   advantagesSlider.disable();
+  gallerySlider.enable();
 }
