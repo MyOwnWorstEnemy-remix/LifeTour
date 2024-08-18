@@ -1,0 +1,95 @@
+.advantage {
+  box-sizing: border-box;
+  width: 288px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  padding: 81px 10px 20px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    border: 1px solid $icon-color-additional;
+    top: 20px;
+    left: 50%;
+    margin-left: -21px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+    padding: 102px 20px 30px;
+
+    &::after {
+      padding: 11px;
+      top: 30px;
+      margin-left: -24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+    max-width: 380px;
+    min-height: 328px;
+    padding: 124px 20px 40px;
+
+    &::after {
+      padding: 14px;
+      top: 40px;
+      margin-left: -27px;
+    }
+  }
+
+  h3 {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 92%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &--security::after {
+    background-image: url("/__spritemap#sprite-security-view");
+  }
+
+  &--experience::after {
+    background-image: url("/__spritemap#sprite-experience-view");
+  }
+
+  &--equipment::after {
+    background-image: url("/__spritemap#sprite-equipment-view");
+  }
+
+  &--routes::after {
+    background-image: url("/__spritemap#sprite-routes-view");
+  }
+
+  &--eco::after {
+    background-image: url("/__spritemap#sprite-eco-friendly-view");
+  }
+}
