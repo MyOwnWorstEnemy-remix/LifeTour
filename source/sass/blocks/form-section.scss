@@ -1,0 +1,97 @@
+.form-section {
+  width: $mobile-actual-width;
+  padding: 174px $mobile-padding;
+  margin: 0 auto;
+  color: $text-color-secondary;
+  text-align: center;
+  background-image:
+    image-set(
+    url("../../img/form-background-mobile@1x.webp") type("image/webp") 1x,
+    url("../../img/form-background-mobile@2x.webp") type("image/webp") 2x,
+    url("../../img/form-background-mobile@1x.png") type("image/png") 1x,
+    url("../../img/form-background-mobile@2x.png") type("image/png") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px 638px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-actual-width;
+    min-height: 590px;
+    padding: $tablet-padding;
+    align-content: center;
+    background-image:
+      image-set(
+      url("../../img/form-background-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/form-background-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/form-background-tablet@1x.png") type("image/png") 1x,
+      url("../../img/form-background-tablet@2x.png") type("image/png") 2x
+      );
+    background-size: 768px 680px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-actual-width;
+    min-height: 760px;
+    padding: $desktop-padding;
+    align-content: center;
+    background-image:
+      image-set(
+      url("../../img/form-background-desktop@1x.webp") type("image/webp") 1x,
+      url("../../img/form-background-desktop@2x.webp") type("image/webp") 2x,
+      url("../../img/form-background-desktop@1x.png") type("image/png") 1x,
+      url("../../img/form-background-desktop@2x.png") type("image/png") 2x
+      );
+    background-size: 1440px 760px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 35px;
+      line-height: 35px;
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 258px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 25px;
+      width: 360px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 40px;
+      width: 100%;
+    }
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
