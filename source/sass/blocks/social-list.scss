@@ -1,0 +1,41 @@
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+
+  @media (min-width:$tablet-width) {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.social-list__link{
+  width: 30px;
+  height: 28px;
+  display: block;
+
+  &--vkontakte::after {
+    width: 17px;
+    height: 9px;
+    top: 10px;
+    left: 6px;
+    mask-image: url("/__spritemap#sprite-vk-view");
+  }
+
+  &--ok::after {
+    width: 10px;
+    height: 16px;
+    top: 7px;
+    left: 10px;
+    mask-image: url("/__spritemap#sprite-ok-view");
+  }
+
+  &--reddit::after {
+    width: 15px;
+    height: 15px;
+    top: 7px;
+    left: 8px;
+    mask-image: url("/__spritemap#sprite-reddit-view");
+  }
+}

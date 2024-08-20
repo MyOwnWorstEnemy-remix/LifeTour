@@ -59,40 +59,31 @@
   }
 
   &:hover {
-    color: $icon-color-additional;
-    opacity: 0.1;
-
     &::after {
       background-color: $icon-color-additional;
+      opacity: 0.1;
     }
   }
 
   &:focus {
-    outline: none;
-    color: $icon-color-additional;
-    opacity: 1;
-
     &::after {
       background-color: $icon-color-additional;
+      opacity: 1;
     }
   }
 
   &:active {
-    color: $active-color;
-    opacity: 1;
-
     &::after {
       background-color: $active-color;
+      opacity: 1;
     }
   }
 }
 
 .tours__link[aria-disabled="true"] {
-  color: $disabled-color;
-  opacity: 1;
-
   &::after {
     background-color: $disabled-color;
+    opacity: 1;
   }
 }
 

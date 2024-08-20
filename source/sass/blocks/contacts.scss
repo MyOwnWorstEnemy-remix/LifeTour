@@ -167,40 +167,6 @@
   }
 }
 
-.contacts__link {
-  font-size: 14px;
-  line-height: 20px;
-  text-decoration: none;
-  color: $text-color-primary;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    line-height: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  &:hover {
-    color: rgba(2, 102, 193, 0.1);
-  }
-
-  &:focus {
-    outline: 0;
-    color: $text-color-additional;
-  }
-
-  &:active {
-    color: $active-color;
-  }
-}
-
-.contacts__link[aria-disabled="true"] {
-  color: $disabled-color;
-}
-
 .contacts__text {
   font-size: 14px;
   line-height: 20px;

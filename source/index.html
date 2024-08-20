@@ -20,6 +20,8 @@
   </head>
 
   <body class="page-body">
+    <!-- Для того чтобы сделать ссылки неактивными необходимо с помощью js добавить им класс disabled.
+        Необходимые функции находятся в файле disable-link.js -->
     <header class="header" data-test="header">
       <div class="header__wrapper">
         <svg class="header__logo" width="142" height="42" role="img" aria-label="Логотип туристической компании LifeTour.">
@@ -339,7 +341,7 @@
             </li>
           </ul>
         </div>
-        <a class="tours__link" href="#">Показать все туры</a>
+        <a class="tours__link primary-link" href="#">Показать все туры</a>
       </section>
       <section class="training" id="training" data-test="training">
         <diV class="training__description">
@@ -803,11 +805,11 @@
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--phone">
               <h3 class="contacts__name">Телефон</h3>
-              <a class="contacts__link" href="tel:7(983)745-45-45">+7 983 745-45-45</a>
+              <a class="contacts__text primary-link" href="tel:7(983)745-45-45">+7 983 745-45-45</a>
             </li>
             <li class="contacts__item contacts__item--email">
               <h3 class="contacts__name">Email</h3>
-              <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              <a class="contacts__text primary-link" href="mailto:info@lifetour.com">info@lifetour.com</a>
             </li>
             <li class="contacts__item contacts__item--address">
               <h3 class="contacts__name">Адрес</h3>
@@ -838,48 +840,54 @@
         </div>
       </section>
       <div class="footer">
-        <svg class="footer__logo" width="142" height="42" role="img" aria-label="Логотип туристической компании LifeTour.">
-          <use href="/__spritemap#sprite-logo"></use>
-        </svg>
-        <ul class="footer__nav">
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#tours">Туры</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#training">Обучение</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#about">О нас</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#gallery">Фотографии</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
-        <a class="footer__phone" href="tel:8(800)725-32-32">8 800 725-32-32</a>
-        <ul class="footer__social-list social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
-              <p class="visually-hidden">Мы в Вконтакте.</p>
+        <div class="footer__wrapper">
+          <div class="footer__nav">
+            <a class="footer__logo-link primary-link" href="index.html">
+              <svg class="footer__logo" width="142" height="42" role="img" aria-label="Логотип туристической компании LifeTour.">
+                <use href="/__spritemap#sprite-logo"></use>
+              </svg>
             </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-link social-list__link--ok" href="https://htmlacademy.ru/">
-              <p class="visually-hidden">Мы в Одноклассниках.</p>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-link social-list__link--reddit" href="https://htmlacademy.ru/">
-              <p class="visually-hidden">Мы в Reddit.</p>
-            </a>
-          </li>
-        </ul>
-        <a class="footer__copyright" href="#">Политика конфиденциальности</a>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#tours">Туры</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#training">Обучение</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#about">О нас</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <a class="footer__phone visually-hidden primary-link" href="tel:8(800)725-32-32">8 800 725-32-32</a>
+          </div>
+          <ul class="footer__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
+                <p class="visually-hidden">Мы в Вконтакте.</p>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-link social-list__link--ok" href="https://htmlacademy.ru/">
+                <p class="visually-hidden">Мы в Одноклассниках.</p>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-link social-list__link--reddit" href="https://htmlacademy.ru/">
+                <p class="visually-hidden">Мы в Reddit.</p>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__copyright primary-link" href="#">Политика конфиденциальности</a>
+        </div>
       </div>
     </footer>
     <script type="module" src="js/main.js"></script>

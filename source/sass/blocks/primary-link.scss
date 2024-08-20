@@ -1,0 +1,22 @@
+.primary-link {
+  text-decoration: none;
+  text-decoration: none;
+  color: $text-color-primary;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    outline: none;
+    color: $text-color-additional;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+}
+
+.primary-link[aria-disabled="true"] {
+  color: $disabled-color;
+}
