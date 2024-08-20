@@ -792,25 +792,29 @@
 
     <footer data-test="footer">
       <section class="contacts" id="contacts">
-        <h2 class="contacts__title title">Контакты<span>Контакты</span></h2>
-        <p>
-          Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости.
-          Мы будем рады поделиться увлекательными историями и подобрать для вас тур.
-        </p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__name">Телефон</h3>
-            <a class="contacts__link" href="tel:7(983)745-45-45">+7 983 745-45-45</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__name">Email</h3>
-            <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__name">Адрес</h3>
-            <p class="contacts__text">г. Москва, пр-т Мира, д. 14, офис 101</p>
-          </li>
-        </ul>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title title">Контакты<span>Контакты</span></h2>
+          <div>
+            <p>
+              Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости.
+              Мы будем рады поделиться увлекательными историями и подобрать для вас тур.
+            </p>
+          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--phone">
+              <h3 class="contacts__name">Телефон</h3>
+              <a class="contacts__link" href="tel:7(983)745-45-45">+7 983 745-45-45</a>
+            </li>
+            <li class="contacts__item contacts__item--email">
+              <h3 class="contacts__name">Email</h3>
+              <a class="contacts__link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+            </li>
+            <li class="contacts__item contacts__item--address">
+              <h3 class="contacts__name">Адрес</h3>
+              <p class="contacts__text">г. Москва, пр-т Мира, <br>д. 14, офис 101</p>
+            </li>
+          </ul>
+        </div>
         <div class="contacts__image">
           <picture>
             <source type="image/webp" media="(min-width: 1440px)"
