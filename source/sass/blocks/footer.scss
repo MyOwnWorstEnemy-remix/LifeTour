@@ -8,7 +8,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 22px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-actual-width;
@@ -28,7 +28,7 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 23px;
+  gap: 22px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -74,9 +74,9 @@
   list-style: none;
   display: grid;
   grid-template-columns: 120px 120px;
-  grid-template-rows: repeat(auto, 3);
+  grid-template-rows: repeat(3, auto);
   column-gap: 50px;
-  row-gap: 15px;
+  row-gap: 10px;
   text-align: center;
 
   @media (min-width:$tablet-width) {

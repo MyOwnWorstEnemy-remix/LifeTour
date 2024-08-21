@@ -1,6 +1,6 @@
 .form-section {
   width: $mobile-actual-width;
-  padding: 174px $mobile-padding;
+  padding: 177px $mobile-padding 174px;
   margin: 0 auto;
   color: $text-color-secondary;
   text-align: center;
@@ -50,7 +50,7 @@
     line-height: 22px;
     font-weight: 800;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 
     @media (min-width: $tablet-width) {
       font-size: 25px;

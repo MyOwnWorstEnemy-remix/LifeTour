@@ -18,24 +18,24 @@
   &--vkontakte::after {
     width: 17px;
     height: 9px;
-    top: 10px;
+    top: 9px;
     left: 6px;
     mask-image: url("/__spritemap#sprite-vk-view");
   }
 
   &--ok::after {
-    width: 10px;
-    height: 16px;
-    top: 7px;
-    left: 10px;
+    width: 11px;
+    height: 15px;
+    top: 6px;
+    left: 9px;
     mask-image: url("/__spritemap#sprite-ok-view");
   }
 
   &--reddit::after {
-    width: 15px;
+    width: 16px;
     height: 15px;
-    top: 7px;
-    left: 8px;
+    top: 6px;
+    left: 7px;
     mask-image: url("/__spritemap#sprite-reddit-view");
   }
 }
