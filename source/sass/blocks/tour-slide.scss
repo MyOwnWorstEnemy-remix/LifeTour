@@ -133,11 +133,19 @@
   flex-wrap: wrap;
 }
 
+.tour-slide__details-group {
+  display: flex;
+  flex-direction: column;
+  min-height: 32px;
+  justify-content: space-between;
+}
+
 .tour-slide__details-title {
   font-size: 12px;
   line-height: 12px;
   font-weight: 300;
   color: $text-color-secondary;
+  margin: 0;
 }
 
 .tour-slide__details-text {
@@ -145,4 +153,5 @@
   line-height: 13px;
   font-weight: 700;
   color: $text-color-secondary;
+  margin: 0;
 }

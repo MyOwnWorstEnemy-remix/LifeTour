@@ -23,11 +23,12 @@
     opacity: 0.03;
     position: absolute;
     left: 0;
-    top: -16px;
+    top: -13px;
 
     @media (min-width: $tablet-width) {
       font-size: 40px;
       line-height: 40px;
+      top: -16px;
     }
 
     @media (min-width: $desktop-width) {

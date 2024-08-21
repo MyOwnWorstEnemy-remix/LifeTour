@@ -8,12 +8,13 @@
   background-color: $background-color-secondary;
   width: $mobile-actual-width;
   padding: $mobile-padding;
+  padding-bottom: 13px;
   margin: 0 auto;
   z-index: 2;
   display: grid;
   grid-template-columns: 1fr 142px;
   grid-template-rows: 42px auto;
-  row-gap: 14px;
+  row-gap: 16px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-actual-width;

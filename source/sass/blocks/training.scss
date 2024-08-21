@@ -15,11 +15,12 @@
 }
 
 .training__description {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 
   p {
     font-size: 14px;
     line-height: 20px;
+    margin: 0;
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
@@ -28,7 +29,15 @@
   }
 }
 
-.training__title,
+.training__title {
+  margin: 0;
+  margin-bottom: 35px;
+
+  span {
+    top: -16px;
+  }
+}
+
 .training__trainers-title {
   margin: 0;
 }
@@ -37,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 35px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
@@ -226,5 +235,11 @@
 
   &:not(:last-child) {
     margin-bottom: 10;
+  }
+
+  br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }

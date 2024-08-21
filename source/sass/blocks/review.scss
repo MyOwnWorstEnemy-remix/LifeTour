@@ -64,13 +64,17 @@
 
   div {
     margin-bottom: 15px;
+    max-height: 208px;
+    overflow: scroll;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 25px;
+      max-height: 181px;
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 2px;
+      max-height: 218px;
     }
   }
 

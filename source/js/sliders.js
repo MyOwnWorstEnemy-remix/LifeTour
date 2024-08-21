@@ -10,9 +10,7 @@ new Swiper('.hero-slider', {
     bulletClass: "hero__bullet",
     bulletActiveClass: "hero__bullet-active",
     clickable: true,
-    renderBullet: function (index, className) {
-      return `<span class="${className}" role="button" aria-label="Go to slide ${index + 1}" tabindex="0"></span>`;
-      }
+    bulletElement: 'button type="button"',
   },
 
   breakpoints: {
@@ -22,6 +20,7 @@ new Swiper('.hero-slider', {
   },
 });
 
+// Слайдер туров
 new Swiper('.tours-slider', {
   modules: [Navigation],
   loop: false,
@@ -47,6 +46,7 @@ new Swiper('.tours-slider', {
   },
 });
 
+// Слайдер инструкторов
 new Swiper('.training-slider', {
   modules: [Navigation],
   loop: false,
@@ -74,6 +74,7 @@ new Swiper('.training-slider', {
   },
 });
 
+// Слайдер отзывов
 new Swiper('.reviews-slider', {
   modules: [Navigation],
   loop: false,
@@ -99,26 +100,45 @@ new Swiper('.reviews-slider', {
   },
 });
 
+// Слайдер преимуществ
 const advantagesSlider = new Swiper('.advantages-slider', {
   modules: [Navigation],
   loop: true,
   simulateTouch: false,
-  navigation: {
-    nextEl: '.advantages__button--next',
-    prevEl: '.advantages__button--prev',
-  },
 
   breakpoints: {
     1440: {
       slidesPerView: "auto",
-      // slidesPerGroup: 2,
       spaceBetween: 30,
-      // initialSlide: 0,
-      // centeredSlides: true,
     },
   },
 });
 
+// Переключение слайдера приемуществ по 2 слайда за раз
+let AdvantageSlides = document.querySelectorAll('.advantage');
+const numberOfAdvantageSlides = AdvantageSlides.length;
+const nextAdvantageSlideButton = document.querySelector('.advantages__button--next');
+const prevAdvantageSlideButton = document.querySelector('.advantages__button--prev');
+let currentAdvantageSlide = 0;
+
+nextAdvantageSlideButton.addEventListener('click', () => {
+  currentAdvantageSlide = (currentAdvantageSlide + 2) % numberOfAdvantageSlides;
+  if (currentAdvantageSlide < 0) {
+    currentAdvantageSlide += numberOfAdvantageSlides;
+  }
+  advantagesSlider.slideToLoop(currentAdvantageSlide);
+});
+
+prevAdvantageSlideButton.addEventListener('click', () => {
+  currentAdvantageSlide = (currentAdvantageSlide - 2) % numberOfAdvantageSlides;
+  if (currentAdvantageSlide < 0) {
+    currentAdvantageSlide += numberOfAdvantageSlides;
+  }
+  advantagesSlider.slideToLoop(currentAdvantageSlide);
+});
+
+
+// Слайдер галереи
 const gallerySlider = new Swiper('.gallery-slider', {
   modules: [Navigation],
   loop: true,

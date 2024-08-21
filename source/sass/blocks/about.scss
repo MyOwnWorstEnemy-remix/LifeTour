@@ -1,6 +1,7 @@
 .about {
   width: 320px;
   margin: 0 auto;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     width: 720px;
@@ -82,11 +83,12 @@
       opacity: 0.03;
       position: absolute;
       left: 0;
-      top: -16px;
+      top: -12px;
 
       @media (min-width: $tablet-width) {
         font-size: 40px;
         line-height: 40px;
+        top: -16px;
       }
 
       @media (min-width: $desktop-width) {
@@ -134,8 +136,10 @@
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+  }
 
-    &:last-child {
+  div {
+    &:not(:last-child) {
       margin-bottom: 25px;
     }
   }

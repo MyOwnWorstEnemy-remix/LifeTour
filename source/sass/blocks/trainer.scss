@@ -1,19 +1,23 @@
 .trainer {
   box-sizing: border-box;
   width: 288px;
-  padding: 15px;
+  height: 356px;
+  padding: 14px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: flex-start;
   row-gap: 15px;
 
   @media (min-width: $tablet-width) {
     width: 211px;
+    height: 386px;
   }
 
   @media (min-width: $desktop-width) {
     width: 285px;
+    height: 354px;
   }
 
   h4 {
@@ -22,6 +26,7 @@
     font-weight: 700;
     max-width: 155px;
     margin: 0;
+    margin-top: 1px;
   }
 
   p {
@@ -29,12 +34,16 @@
     line-height: 16px;
     width: 100%;
     margin: 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 6; /* Number of lines */
-    line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    max-height: 64px;
+    overflow: scroll;
+
+    @media (min-width: $tablet-width) {
+      max-height: 96px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-height: 64px;
+    }
   }
 }
 

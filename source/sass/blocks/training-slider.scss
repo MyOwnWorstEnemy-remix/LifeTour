@@ -1,15 +1,18 @@
 .training-slider {
   width: $mobile-actual-width;
+  height: 356px;
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-actual-width;
+    height: 388px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-actual-width;
+    height: 356px;
     margin-bottom: 56px;
   }
 }
