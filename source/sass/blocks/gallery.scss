@@ -68,7 +68,7 @@
   margin-bottom: 27px;
   width: 100%;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 30px;
   }
 
@@ -79,8 +79,10 @@
 
 .gallery__button-wrapper {
   display: flex;
-  gap: 4px;
+  gap: 6px;
   margin-top: auto;
+  margin-right: 1px;
+  margin-bottom: 1px;
 }
 
 .gallery__button {

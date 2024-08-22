@@ -6,6 +6,17 @@
   @media (min-width: $tablet-width) {
     width: $tablet-actual-width;
     padding: 60px $tablet-padding 40px;
+
+    background-image:
+      image-set(
+      url("../../img/training-clouds-tablet@1x.webp") type("image/webp") 1x,
+      url("../../img/training-clouds-tablet@2x.webp") type("image/webp") 2x,
+      url("../../img/training-clouds-tablet@1x.png") type("image/png") 1x,
+      url("../../img/training-clouds-tablet@2x.png") type("image/png") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: right 612px;
+    background-size: 465px 280px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +27,10 @@
 
 .training__description {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
 
   p {
     font-size: 14px;
@@ -33,6 +48,10 @@
   margin: 0;
   margin-bottom: 35px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
   span {
     top: -16px;
   }
@@ -49,7 +68,7 @@
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +78,9 @@
 
 .training__button-wrapper {
   display: flex;
-  gap: 4px;
+  gap: 6px;
+  margin-right: 1px;
+  margin-top: -2px;
 }
 
 .training__process-title {
@@ -72,7 +93,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 104px;
+    margin-bottom: 101px;
   }
 
   @media (min-width: $desktop-width) {
@@ -108,7 +129,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 134px;
-    row-gap: 105px;
+    row-gap: 104px;
 
     &::before {
       content: none;
@@ -165,6 +186,10 @@
     &::before {
       content: none;
     }
+
+    &::after {
+      top: 2px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -182,6 +207,7 @@
 
     &::after {
       left: 10px;
+      top: 0;
     }
   }
 

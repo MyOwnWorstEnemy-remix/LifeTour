@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     width: 723px;
-    padding: 60px 0 40px 45px;
+    padding: 63px 0 20px 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,6 +43,7 @@
 
 .reviews__button-wrapper {
   display: flex;
-  gap: 4px;
-  margin-top: auto;
+  gap: 6px;
+  margin-top: 1px;
+  margin-right: 1px;
 }

@@ -25,6 +25,10 @@
   justify-content: center;
   gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    bottom: 44px;
+  }
+
   @media (min-width: $desktop-width) {
     left: auto;
     right: 120px;

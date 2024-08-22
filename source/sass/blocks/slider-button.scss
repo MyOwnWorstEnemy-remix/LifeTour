@@ -5,10 +5,10 @@
   &::after {
     content: "";
     position: absolute;
-    height: 7px;
-    width: 13px;
+    height: 9px;
+    width: 15px;
     top: 13px;
-    right: 12px;
+    right: 10px;
     background-color: $background-color-primary;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -19,8 +19,8 @@
     display: block;
     position: relative;
     cursor: pointer;
-    width: 35px;
-    height: 33px;
+    width: 37px;
+    height: 35px;
   }
 
   &:hover {
