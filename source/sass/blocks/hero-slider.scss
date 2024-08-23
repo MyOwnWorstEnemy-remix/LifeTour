@@ -43,7 +43,8 @@
   @media (min-width: $desktop-width) {
     text-align: left;
     width: 945px;
-    padding: 40px $desktop-padding;
+    padding: 40px $desktop-padding 98px;
+    height: 662px;
   }
 
   h2 {
@@ -73,6 +74,8 @@
     color: $text-color-secondary;
     margin: 0;
     margin-bottom: 60px;
+    max-height: 230px;
+    overflow: scroll;
 
     @media (min-width: $tablet-width) {
       font-size: 17px;
@@ -80,10 +83,13 @@
       width: 500px;
       margin: 0 auto;
       margin-bottom: 38px;
+      max-height: 550px;
     }
 
     @media (min-width: $desktop-width) {
+      margin-left: 0;
       width: 464px;
+      max-height: 340px;
     }
   }
 }
@@ -142,18 +148,18 @@
     width: 500px;
     height: 44px;
     position: absolute;
-    left: $desktop-padding;
-    bottom: 80px;
+    left: 121px;
+    bottom: 81px;
     clip: auto;
   }
 }
 
 .hero-slider__detail-info {
   color: $text-color-secondary;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 16px;
   margin: 0;
-  padding: 14px 20px 14px 40px;
+  padding: 14px 20px 14px 39px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
 
@@ -164,7 +170,7 @@
     height: 12px;
     top: 50%;
     margin-top: -6px;
-    left: 20px;
+    left: 19px;
     background-color: $background-color-primary;
     mask-repeat: no-repeat;
   }

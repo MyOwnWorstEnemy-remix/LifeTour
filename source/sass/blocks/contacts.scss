@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-actual-width;
-    padding: 100px $desktop-padding 95px;
+    padding: 100px $desktop-padding 94px;
     display: flex;
     align-items: center;
     gap: 100px;
@@ -69,8 +69,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 26px;
-    margin-top: 19px;
+    margin-bottom: 22px;
+    margin-top: 23px;
   }
 }
 

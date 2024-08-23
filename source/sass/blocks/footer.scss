@@ -119,6 +119,11 @@
     border-bottom: 1px solid $text-color-primary;
   }
 
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
   &:hover {
     &::after {
       content: "";
@@ -167,6 +172,7 @@
     min-height: 18px;
     margin: 0;
     margin-left: auto;
+    margin-top: 3px;
 
     &:hover {
       color: rgba(2, 102, 193, 0.1);

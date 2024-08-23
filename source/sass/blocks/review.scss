@@ -1,7 +1,9 @@
 .review {
   width: 250px;
   padding: 20px;
+  padding-top: 19px;
   margin: 0;
+  background-color: $background-color-primary;
   box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
   box-sizing: border-box;
 
@@ -16,6 +18,7 @@
   @media (min-width: $desktop-width) {
     width: 700px;
     padding-right: 40px;
+    padding-top: 19px;
   }
 
   &:last-child {
@@ -38,11 +41,13 @@
     width: 186px;
     height: 237px;
     margin-bottom: 0;
+    margin-top: 1px;
   }
 
   @media (min-width: $desktop-width) {
     width: 258px;
     height: 253px;
+    margin-top: 0;
   }
 
   img {
@@ -60,6 +65,7 @@
   @media (min-width: $desktop-width) {
     width: 352px;
     align-content: flex-start;
+    margin-top: -2px;
   }
 
   div {
@@ -73,7 +79,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 2px;
+      margin-bottom: 4px;
       max-height: 218px;
     }
   }

@@ -32,7 +32,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-actual-width;
-    min-height: 760px;
+    min-height: 520px;
     padding: $desktop-padding;
     align-content: center;
     background-image:
@@ -62,7 +62,8 @@
     @media (min-width: $desktop-width) {
       font-size: 35px;
       line-height: 35px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
+      margin-top: 4px;
     }
   }
 

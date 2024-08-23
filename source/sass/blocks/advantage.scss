@@ -47,6 +47,16 @@
       top: 40px;
       margin-left: -27px;
     }
+
+    &:last-child {
+      padding: 124px 20px 40px;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $desktop-width) {
+      margin-left: 30px;
+    }
   }
 
   h3 {
@@ -60,6 +70,12 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 18px;
+      width: 100%;
     }
   }
 
@@ -76,6 +92,12 @@
 
   p:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &--security::after {
@@ -103,5 +125,9 @@
 .advantage:nth-child(5) {
   h3 {
     margin-top: 1px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
   }
 }

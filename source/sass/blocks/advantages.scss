@@ -20,7 +20,27 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-actual-width;
-    padding: 135px $desktop-padding 100px;
+    padding: 144px $desktop-padding 100px;
+    background: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: $desktop-width;
+      height: 447px;
+      top: -272px;
+      left: 0;
+      background-image:
+        image-set(
+        url("../../img/advantages-clouds-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/advantages-clouds-desktop@2x.webp") type("image/webp") 2x,
+        url("../../img/advantages-clouds-desktop@1x.png") type("image/png") 1x,
+        url("../../img/advantages-clouds-desktop@2x.png") type("image/png") 2x
+      );
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
   }
 }
 
@@ -33,14 +53,22 @@
     margin-bottom: 60px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
   span {
     width: 100%;
+
+    @media (min-width: $desktop-width) {
+      top: -29px;
+    }
   }
 }
 
 .advantages__button-wrapper {
   display: flex;
-  gap: 4px;
+  gap: 6px;
   justify-content: center;
 }
 
