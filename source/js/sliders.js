@@ -154,7 +154,7 @@ const gallerySlider = new Swiper('.gallery-slider', {
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 3,
+      spaceBetween: 5,
     },
     1440: {
       slidesPerView: "auto",
