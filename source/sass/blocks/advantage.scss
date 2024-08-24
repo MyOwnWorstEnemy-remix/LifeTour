@@ -13,7 +13,7 @@
     height: 24px;
     padding: 8px;
     border: 1px solid $icon-color-additional;
-    top: 20px;
+    top: 19px;
     left: 50%;
     margin-left: -21px;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
   @media (min-width: $desktop-width) {
     width: 380px;
     max-width: 380px;
-    min-height: 328px;
+    height: 328px;
     padding: 124px 20px 40px;
 
     &::after {
@@ -83,10 +83,19 @@
     font-size: 12px;
     line-height: 18px;
     margin: 0;
+    width: 269px;
+    margin-left: -1px;
 
     @media (min-width: $tablet-width) {
       font-size: 14px;
       line-height: 22px;
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-height: 145px;
+      overflow-y: scroll;
+      scrollbar-width: none;
     }
   }
 
@@ -130,4 +139,8 @@
       margin-top: 0;
     }
   }
+}
+
+.advantage:nth-child(3) {
+  padding-top: 80px;
 }

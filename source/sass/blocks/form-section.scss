@@ -19,7 +19,6 @@
     width: $tablet-actual-width;
     min-height: 590px;
     padding: $tablet-padding;
-    align-content: center;
     background-image:
       image-set(
       url("../../img/form-background-tablet@1x.webp") type("image/webp") 1x,
@@ -28,6 +27,9 @@
       url("../../img/form-background-tablet@2x.png") type("image/png") 2x
       );
     background-size: 768px 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {

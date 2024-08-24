@@ -59,19 +59,22 @@
 .review__text {
   @media (min-width: $tablet-width) {
     width: 299px;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
     width: 352px;
-    align-content: flex-start;
+    justify-content: flex-start;
     margin-top: -2px;
   }
 
   div {
     margin-bottom: 15px;
     max-height: 208px;
-    overflow: scroll;
+    overflow-y: scroll;
+    scrollbar-width: none;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 25px;

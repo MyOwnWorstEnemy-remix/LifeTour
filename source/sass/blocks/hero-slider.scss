@@ -64,7 +64,7 @@
     @media (min-width: $desktop-width) {
       font-size: 77px;
       line-height: 77px;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
   }
 
@@ -75,7 +75,8 @@
     margin: 0;
     margin-bottom: 60px;
     max-height: 230px;
-    overflow: scroll;
+    overflow-y: scroll;
+    scrollbar-width: none;
 
     @media (min-width: $tablet-width) {
       font-size: 17px;
@@ -89,7 +90,7 @@
     @media (min-width: $desktop-width) {
       margin-left: 0;
       width: 464px;
-      max-height: 340px;
+      max-height: 280px;
     }
   }
 }
@@ -159,7 +160,7 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0;
-  padding: 14px 20px 14px 39px;
+  padding: 14px 20px 14px 40px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
 

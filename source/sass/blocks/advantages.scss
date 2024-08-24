@@ -1,6 +1,6 @@
 .advantages {
   width: $mobile-actual-width;
-  padding: 36px $mobile-padding 20px;
+  padding: 37px $mobile-padding 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -46,7 +46,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   text-align: center;
 
   @media (min-width: $tablet-width) {

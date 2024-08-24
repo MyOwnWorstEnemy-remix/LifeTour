@@ -26,7 +26,7 @@
   width: 158px;
   display: flex;
   flex-wrap: wrap;
-  gap: 7px;
+  gap: 6px;
 
   @media (min-width: $tablet-width) {
     width: 253px;
@@ -57,7 +57,7 @@
 
   &--small{
     &:first-child {
-      height: 134px;
+      height: 135px;
 
       @media (min-width: $tablet-width) {
         height: 209px;
