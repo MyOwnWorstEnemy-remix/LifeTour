@@ -17,7 +17,7 @@
 .gallery__header {
   width: $mobile-actual-width;
   padding: 0 $mobile-padding;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-actual-width;
@@ -65,7 +65,7 @@
 
 .gallery__title {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   width: 100%;
 
   @media (min-width: $tablet-width) {

@@ -3,7 +3,7 @@
   width: 288px;
   background-color: $background-color-primary;
   border: 1px solid rgba(2, 102, 193, 0.1);
-  padding: 81px 10px 19px;
+  padding: 81px 9px 19px;
   text-align: center;
 
   &::after {
@@ -23,7 +23,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 324px;
-    padding: 103px 19px 28px;
+    padding: 103px 19px 29px;
 
     &::after {
       padding: 11px;
@@ -66,12 +66,14 @@
     @media (min-width: $tablet-width) {
       font-size: 16px;
       line-height: 16px;
+      margin-bottom: 14px;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 18px;
       line-height: 18px;
       width: 100%;
+      margin-bottom: 15px;
     }
   }
 
