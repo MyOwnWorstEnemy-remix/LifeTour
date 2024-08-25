@@ -1,14 +1,14 @@
-import Swiper from "swiper";
-import {Navigation, Pagination} from "swiper/modules";
+import Swiper from 'swiper';
+import {Navigation, Pagination} from 'swiper/modules';
 
 new Swiper('.hero-slider', {
   modules: [Pagination],
   loop: true,
   pagination: {
-    el: ".hero__pagination",
-    type: "bullets",
-    bulletClass: "hero__bullet",
-    bulletActiveClass: "hero__bullet-active",
+    el: '.hero__pagination',
+    type: 'bullets',
+    bulletClass: 'hero__bullet',
+    bulletActiveClass: 'hero__bullet-active',
     clickable: true,
     bulletElement: 'button type="button"',
   },
@@ -89,11 +89,11 @@ new Swiper('.reviews-slider', {
       spaceBetween: 40,
     },
     768: {
-      slidesPerView: "auto",
+      slidesPerView: 'auto',
       spaceBetween: 30,
     },
     1440: {
-      slidesPerView: "auto",
+      slidesPerView: 'auto',
       spaceBetween: 120,
       simulateTouch: false,
     },
@@ -108,14 +108,14 @@ const advantagesSlider = new Swiper('.advantages-slider', {
 
   breakpoints: {
     1440: {
-      slidesPerView: "auto",
+      slidesPerView: 'auto',
       spaceBetween: 30,
     },
   },
 });
 
 // Переключение слайдера приемуществ по 2 слайда за раз
-let AdvantageSlides = document.querySelectorAll('.advantage');
+const AdvantageSlides = document.querySelectorAll('.advantage');
 const numberOfAdvantageSlides = AdvantageSlides.length;
 const nextAdvantageSlideButton = document.querySelector('.advantages__button--next');
 const prevAdvantageSlideButton = document.querySelector('.advantages__button--prev');
@@ -157,13 +157,13 @@ const gallerySlider = new Swiper('.gallery-slider', {
       spaceBetween: 5,
     },
     1440: {
-      slidesPerView: "auto",
+      slidesPerView: 'auto',
       simulateTouch: false,
     },
   },
 });
 
-if (window.matchMedia("(min-width: 1440px)").matches) {
+if (window.matchMedia('(min-width: 1440px)').matches) {
   advantagesSlider.enable();
   gallerySlider.disable();
 } else {

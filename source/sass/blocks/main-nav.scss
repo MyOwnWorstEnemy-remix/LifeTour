@@ -56,6 +56,7 @@
 
   &:focus {
     outline: none;
+
     &::after {
       opacity: 1;
       background-color: $icon-color-dark;

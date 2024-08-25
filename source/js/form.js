@@ -9,7 +9,7 @@ const checkInput = (rules, input) => {
   if (!checkedInput || checkedInput[0] !== inputValue) {
     input.classList.add('form__text-input--error');
     const inputText = input.nextElementSibling;
-    if (inputText.value!='') {
+    if (inputText.value !== '') {
       inputText.style.display = 'none';
     }
     return false;
@@ -22,7 +22,7 @@ const checkInput = (rules, input) => {
 const onClickCheck = (evt) => {
   evt.preventDefault();
   const phoneRules = /[^\p{L}]+/gu;
-  const emailRules = /^[a-z0-9!#$%&'*+\/=?^_`{|}~-]+@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|рф)$/;
+  const emailRules = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|рф)$/;
   const phoneCheckResult = checkInput(phoneRules, phoneInput);
   const emailCheckResult = checkInput(emailRules, emailInput);
   if(emailCheckResult && phoneCheckResult) {

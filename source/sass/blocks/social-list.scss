@@ -4,22 +4,22 @@
   justify-content: center;
   gap: 16px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 50%;
     margin: 0 auto;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     gap: 14px;
   }
 }
 
-.social-list__link{
+.social-list__link {
   width: 30px;
   height: 28px;
   display: block;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 29px;
   }
 

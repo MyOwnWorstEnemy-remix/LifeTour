@@ -7,8 +7,7 @@ const onToggleClick = () => {
   navigation.classList.toggle('main-nav--closed');
   if(navigation.classList.contains('main-nav--opened')) {
     document.body.style.overflow = 'hidden';
-  }
-  else {
+  } else {
     document.body.style.overflow = '';
   }
 };
@@ -17,7 +16,7 @@ const onLinkClick = () => {
   navigation.classList.remove('main-nav--opened');
   navigation.classList.add('main-nav--closed');
   document.body.style.overflow = '';
-}
+};
 
 // Открытие/закрытие меню при клике на кнопку
 toggle.addEventListener('click', onToggleClick);
@@ -25,4 +24,4 @@ toggle.addEventListener('click', onToggleClick);
 // Закрытие меню после клика на ссылку
 links.forEach((link) => {
   link.addEventListener('click', onLinkClick);
-})
+});
