@@ -27,12 +27,8 @@
 
     &::after {
       padding: 11px;
-      top: 30px;
+      top: 29px;
       margin-left: -24px;
-    }
-
-    &:last-child {
-      padding: 101px 19px 35px;
     }
   }
 
@@ -40,7 +36,7 @@
     width: 380px;
     max-width: 380px;
     height: 328px;
-    padding: 123px 19px 40px;
+    padding: 123px 19px 40px 20px;
 
     &::after {
       padding: 14px;
@@ -84,7 +80,6 @@
     line-height: 18px;
     margin: 0;
     width: 269px;
-    margin-left: -1px;
 
     @media (min-width: $tablet-width) {
       font-size: 14px;
@@ -127,24 +122,5 @@
 
   &--eco::after {
     background-image: url("/__spritemap#sprite-eco-friendly-view");
-  }
-}
-
-.advantage:nth-child(3),
-.advantage:nth-child(5) {
-  h3 {
-    margin-top: 1px;
-
-    @media (min-width: $desktop-width) {
-      margin-top: 0;
-    }
-  }
-}
-
-.advantage:nth-child(3) {
-  padding-top: 80px;
-
-  @media (min-width: $desktop-width) {
-    padding-top: 123px;
   }
 }
