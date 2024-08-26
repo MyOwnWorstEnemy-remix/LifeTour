@@ -1,7 +1,8 @@
 import Swiper from 'swiper';
 import {Navigation, Pagination} from 'swiper/modules';
 
-new Swiper('.hero-slider', {
+// Слайдер блока hero
+const heroSlider = new Swiper('.hero-slider', {
   modules: [Pagination],
   loop: true,
   pagination: {
@@ -19,6 +20,19 @@ new Swiper('.hero-slider', {
     },
   },
 });
+
+const heroButtons = document.querySelectorAll('.hero-slider__button');
+
+const hideButtons = () => {
+  const currentHeroSlideButton = heroButtons[heroSlider.activeIndex];
+  heroButtons.forEach((button) => {
+    button.setAttribute('tabindex', '-1');
+  });
+  currentHeroSlideButton.setAttribute('tabindex', '0');
+};
+
+hideButtons();
+heroSlider.on('slideChange', hideButtons);
 
 // Слайдер туров
 new Swiper('.tours-slider', {
