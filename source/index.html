@@ -24,9 +24,11 @@
         Необходимые функции находятся в файле disable-link.js -->
     <header class="header" data-test="header">
       <div class="header__wrapper">
-        <svg class="header__logo" width="142" height="42" role="img" aria-label="Логотип туристической компании LifeTour.">
-          <use href="/__spritemap#sprite-logo"></use>
-        </svg>
+        <a class="header__logo-link" href="index.html">
+          <svg class="header__logo" width="142" height="42" role="img" aria-label="Логотип туристической компании LifeTour.">
+            <use href="/__spritemap#sprite-logo"></use>
+          </svg>
+        </a>
         <nav class="header__nav main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
@@ -455,7 +457,7 @@
           </ul>
         </div>
         <h3 class="training__process-title">Процесс обучения</h3>
-        <!--Переполнение теста реализовано через js (адаптируемая высота линии). Для проверки добавлять текст прямо в разметку.-->
+        <!-- Переполнение теста реализовано через js (адаптируемая высота линии). Для проверки добавлять текст прямо в разметку. -->
         <ul class="training__process">
           <li class="training__step training__step--map">
             <p class="training__step-text">Изучение спортивного туристского движения</p>

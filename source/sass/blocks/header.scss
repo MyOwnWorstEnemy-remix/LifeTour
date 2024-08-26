@@ -32,11 +32,14 @@
   }
 }
 
+.header__logo-link {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
 .header__logo {
   width: 142px;
   height: 42px;
-  grid-column: 2/3;
-  grid-row: 1/2;
 
   @media (min-width: $desktop-width) {
     margin: 0 32px;
@@ -48,7 +51,6 @@
   line-height: 14px;
   font-weight: 600;
   text-align: right;
-  color: $text-color-secondary;
   text-decoration: none;
   grid-column: 2/3;
   grid-row: 2/3;
@@ -67,6 +69,11 @@
     line-height: 18px;
     margin-left: 0;
   }
+}
+
+.header__logo-link,
+.header__phone {
+  color: $text-color-secondary;
 
   &:hover {
     opacity: 0.5;
@@ -84,6 +91,8 @@
   }
 }
 
-.header__phone[aria-disabled="true"] {
+
+.header__phone[aria-disabled="true"],
+.header__logo-link[aria-disabled="true"] {
   color: $disabled-color;
 }

@@ -113,8 +113,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 3px 5px;
-    top: -3px;
+    padding: 1px 5px;
+    top: 0;
     left: -5px;
     border-bottom: 1px solid $text-color-primary;
   }
@@ -135,7 +135,9 @@
 
     &::after {
       content: "";
-      left: -6px;
+      left: -5px;
+      top: -1px;
+      padding: 1px 4px;
       border: 1px solid $text-color-primary;
     }
   }
@@ -173,19 +175,6 @@
     margin: 0;
     margin-left: auto;
     margin-top: 3px;
-
-    &:hover {
-      color: rgba(2, 102, 193, 0.1);
-    }
-
-    &:focus {
-      outline: 0;
-      color: $text-color-additional;
-    }
-
-    &:active {
-      color: $active-color;
-    }
   }
 }
 

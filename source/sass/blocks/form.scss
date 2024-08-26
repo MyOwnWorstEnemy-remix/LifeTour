@@ -143,6 +143,7 @@
   }
 
   &:disabled {
+    cursor: auto;
     color: $text-color-secondary;
     background-color: $disabled-color;
     border: 1px solid $disabled-color;
