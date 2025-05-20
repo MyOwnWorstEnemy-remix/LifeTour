@@ -1,15 +1,13 @@
 .hero-slider {
-  width: 320px;
+  width: 100%;
   height: 568px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
     height: 1034px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
     height: 800px;
   }
 }
@@ -22,7 +20,7 @@
 
 .hero-slider__info {
   position: absolute;
-  width: $mobile-actual-width;
+  min-width: $mobile-actual-width;
   padding: 40px $mobile-padding 0;
   height: 472px;
   top: 0;
@@ -34,7 +32,6 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-actual-width;
     padding: $tablet-padding;
     padding-bottom: 0;
     height: 885px;
@@ -204,4 +201,9 @@
     right: -133px;
     z-index: -1;
   }
+}
+
+.hero-slider__image img {
+  width: 100%;
+  object-fit: cover;
 }

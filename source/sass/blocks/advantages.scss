@@ -19,8 +19,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-actual-width;
-    padding: 135px $desktop-padding 100px;
+    width: 100vw;
+    overflow: hidden;
+    padding: 135px 0 100px;
     background: none;
     position: relative;
 

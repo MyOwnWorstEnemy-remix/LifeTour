@@ -103,12 +103,12 @@ new Swiper('.reviews-slider', {
       spaceBetween: 40,
     },
     768: {
-      slidesPerView: 'auto',
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 40,
     },
     1440: {
-      slidesPerView: 'auto',
-      spaceBetween: 120,
+      slidesPerView: 2,
+      spaceBetween: 60,
       simulateTouch: false,
     },
   },
@@ -119,38 +119,18 @@ const advantagesSlider = new Swiper('.advantages-slider', {
   modules: [Navigation],
   loop: true,
   simulateTouch: false,
+  navigation: {
+    nextEl: '.advantages__button--next',
+    prevEl: '.advantages__button--prev',
+  },
 
   breakpoints: {
     1440: {
-      slidesPerView: 'auto',
+      slidesPerView: 3,
       spaceBetween: 30,
     },
   },
 });
-
-// Переключение слайдера приемуществ по 2 слайда за раз
-const AdvantageSlides = document.querySelectorAll('.advantage');
-const numberOfAdvantageSlides = AdvantageSlides.length;
-const nextAdvantageSlideButton = document.querySelector('.advantages__button--next');
-const prevAdvantageSlideButton = document.querySelector('.advantages__button--prev');
-let currentAdvantageSlide = 0;
-
-nextAdvantageSlideButton.addEventListener('click', () => {
-  currentAdvantageSlide = (currentAdvantageSlide + 2) % numberOfAdvantageSlides;
-  if (currentAdvantageSlide < 0) {
-    currentAdvantageSlide += numberOfAdvantageSlides;
-  }
-  advantagesSlider.slideToLoop(currentAdvantageSlide);
-});
-
-prevAdvantageSlideButton.addEventListener('click', () => {
-  currentAdvantageSlide = (currentAdvantageSlide - 2) % numberOfAdvantageSlides;
-  if (currentAdvantageSlide < 0) {
-    currentAdvantageSlide += numberOfAdvantageSlides;
-  }
-  advantagesSlider.slideToLoop(currentAdvantageSlide);
-});
-
 
 // Слайдер галереи
 const gallerySlider = new Swiper('.gallery-slider', {

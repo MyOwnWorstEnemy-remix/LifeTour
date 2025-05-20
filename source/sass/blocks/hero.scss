@@ -1,17 +1,10 @@
 .hero {
-  width: 320px;
+  width: 100vw;
+  min-width: 320px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
   background-color: #645d6b;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
-  }
 }
 
 .hero__pagination {

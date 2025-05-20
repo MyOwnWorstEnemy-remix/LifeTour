@@ -3,7 +3,8 @@
 }
 
 .footer__wrapper {
-  width: $mobile-actual-width;
+  min-width: $mobile-actual-width;
+  width: 70%;
   padding: 23px $mobile-padding 20px;
   margin: 0 auto;
   display: flex;
@@ -11,13 +12,11 @@
   gap: 22px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-actual-width;
     padding: 34px $tablet-padding 20px;
     gap: 34px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-actual-width;
     padding: 32px $desktop-padding;
     gap: 22px;
   }
@@ -32,6 +31,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    justify-content: space-between;
     gap: 42px;
   }
 

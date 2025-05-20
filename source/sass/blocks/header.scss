@@ -6,7 +6,7 @@
 
 .header__wrapper {
   background-color: $background-color-secondary;
-  width: $mobile-actual-width;
+  min-width: $mobile-actual-width;
   padding: $mobile-padding;
   padding-bottom: 13px;
   margin: 0 auto;
@@ -17,7 +17,6 @@
   row-gap: 16px;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-actual-width;
     padding: 20px $tablet-padding;
     grid-template-columns: 1fr 142px 1fr;
     grid-template-rows: auto;
@@ -25,7 +24,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-actual-width;
     padding: 42px $desktop-padding;
     display: flex;
     justify-content: space-between;

@@ -49,14 +49,14 @@
 }
 
 .tours__wrapper {
-  width: $mobile-actual-width;
+  min-width: $mobile-actual-width;
+  width: 70%;
   padding: 38px $mobile-padding 20px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-actual-width;
     padding: 60px $tablet-padding 40px;
   }
 
