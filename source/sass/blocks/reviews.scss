@@ -5,7 +5,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    min-width: 723px;
+    min-width: $tablet-actual-width;
     width: 70%;
     padding: 60px 45px 20px;
   }
